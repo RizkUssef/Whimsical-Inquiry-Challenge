@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rubik Scribble";
+}
+
+*::-moz-selection {
+  color: #2b2b2b;
+  background-color: #7D7058;
+}
+
+*::selection {
+  color: #2b2b2b;
+  background-color: #7D7058;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  height: 100vh;
+  background-image: url("../../img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(92, 92, 92, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.page h1 {
+  z-index: 10;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.page .contant {
+  z-index: 10;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 0px 0px 15px #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0px;
+}
+.page .contant h1 {
+  z-index: 10;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #7D7058;
+}
+.page .contant .btn {
+  z-index: 10;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page .contant .btn button {
+  background-color: #7D7058;
+  padding: 5px 30px;
+  border-radius: 10px;
+  color: #2b2b2b;
+  font-family: "Kenia";
+  text-transform: capitalize;
+  font-size: 25px;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.page .contant .btn button:hover {
+  box-shadow: 0px 0px 15px #7D7058;
+}
+.page .contant .btn #no_btn {
+  position: relative;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */
